@@ -1,12 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Anagha Parameswar - Aspiring Software Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>Portfolio</header>
-    Hi there! I'm Anagha Parameswar
+
+    <header>
+        <strong>Anagha</strong>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#activities">Activities</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="toggle" onclick="toggle()">🌙</div>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <img src="Anagha-Parameswar.JPEG" alt="Profile Picture">
+        <div class="hero-text">
+            <b class="intro-line">Hi there! It's</b>
+            <h1>Anagha Parameswar</h1>
+            <b class="intro-line">Undergraduate CSE Student • Tech Enthusiast</b>
+            <br><br><br>
+            <div class="summary">
+                I am a second-year undergraduate student pursuing B.Tech in Computer Science at UVCE, with a keen
+                interest in web development and problem-solving. I work with Python, MySQL, C and Java, and enjoy
+                building projects using modular code and GitHub. Active in tech communities and workshops, I am eager to
+                apply my skills to real-world projects and keep growing as a developer.
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card">
+                    <b>Bachelor of Technology in Computer Science and Engineering (2024-2028) • 9.27 CGPA</b><br><br>
+                    Currently pursuing B.Tech in CSE at University of Visvesvaraya College of Engineering (UVCE),
+                    balancing academics with projects and developer communities
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card">
+                    <b>Class XII CBSE: PCMC Stream (2023-2024) • 95.8%</b><br><br>
+                    Completed Class XII in PCMC stream, building strong foundations in mathematics and computing
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="card">
+                    <b>Class X CBSE (2021-2022) • 96.6%</b><br><br>
+                    Finished Class X with solid grounding in science and logical reasoning
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="page">
+        <h2>Projects</h2>
+        <div class="flex">
+            <div class="card">
+                <b>FundRadar</b><br><br>
+                Hackathon project on financial transparency. Built modular UI components and improved navigation flow
+                for better data exploration.
+                <br>
+                <a href="https://bnb-tls9.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <button>Visit Website</button>
+                </a>
+            </div>
+            <div class="card">
+                <b>CivicAmp</b><br><br>
+                Civic issue reporting platform with scalable forms, validation logic and accessibility-focused layouts.
+                <br>
+                <a href="https://civicconnect.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <button>Visit Website</button>
+                </a>
+            </div>
+            <div class="card">
+                <b>To-Do App</b><br><br>
+                Python Tkinter app with persistent storage, exception handling and OOP architecture for maintainability
+                <br>
+                <a href="https://github.com/SilverSquare-22/My-Python-Programs/blob/main/My%20To-Do%20List%20Tkinter%20GUI.py"
+                    target="_blank" rel="noopener noreferrer">
+                    <button>GitHub</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="page">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <div class="chips">
+                    <span>Python</span>
+                    <span>C</span>
+                    <span>Java</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <div class="chips">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <div class="chips">
+                    <span>MySQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Version Control</h3>
+                <div class="chips">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Problem Solving</h3>
+                <div class="chips">
+                    <span>Data Structures</span>
+                    <span>Algorithms</span>
+                    <span>Debugging</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="page">
+        <h2>Activities</h2>
+        <div class="flex">
+            <div class="card">
+                <b>Probation Coordinator, Cloud Computing and Cyber Security (CL-CY) Domain, MARVEL UVCE (Oct 2025 – Nov
+                    2025)</b><br><br>
+                Assisted students in lab sessions, coordinated a cybersecurity workshop on ethical hacking and gained
+                hands-on experience with AWS fundamentals and ZAP-based web vulnerability testing
+            </div>
+            <div class="card">
+                <b>Tech member of Google Developer Group UVCE (Nov 2025 - Present)</b><br><br>
+                Part of the developer community focused on learning modern technologies and open-source collaborations
+            </div>
+            <div class="card">
+                <b>Volunteer at Impetus 25.0</b><br><br>
+                Volunteered at Impetus 25.0, supporting promotions, logistics and smooth event execution
+                <br>
+                <a href="https://drive.google.com/file/d/1KAMQpVGPnQZiC4waXFIS78GXUK23DKlz/view?usp=drive_link"
+                    target="_blank" rel="noopener noreferrer">
+                    <button>View Certificate</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="page">
+        <h2>Certifications</h2>
+        <div class="flex">
+            <div class="card">
+                <b>DSA Workshop</b>
+                <br><br>
+                Completed a comprehensive DSA workshop covering data structures, algorithms and problem-solving
+                techniques. Gained hands-on experience with coding challenges and optimized solutions.
+                <br>
+                <a href="https://drive.google.com/file/d/1PXgqnfIt-Wz9qLmMS2MWEgVJcSAaKHpd/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer"><button>View Certificate</button></a>
+            </div>
+            <div class="card">
+                <b>DataArt School of JavaScript</b>
+                <br><br>
+                Completed the DataArt School of JavaScript, gaining hands-on experience building UI components while
+                learning core web development concepts including HTML, CSS, JavaScript, TypeScript, React and Web
+                Accessibility
+                <br>
+                <a href="https://drive.google.com/file/d/182y6pSfW2vgaUlFUqLwGMGg0Tg2W7F4m/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer"><button>View Certificate</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+        <h2>Connect with me here</h2>
+        <div class="flex">
+            <div class="card"> <a href="anaghaparameswar22@gmail.com">Gmail</a></div>
+            <div class="card"><a href="https://linkedin.com/in/silversquare22">LinkedIn</a></div>
+            <div class="card"><a href="https://github.com/SilverSquare-22">GitHub</a></div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Anagha Parameswar | Built with HTML, CSS & JavaScript
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
